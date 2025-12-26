@@ -8,7 +8,8 @@ public class Main {
     public static void main(String[] args){
         try{
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-            
+            System.out.println("=== 입력 테스트 ===");
+
             while(true){
                 System.out.print("입력 (종료: quit) > ");
                 String str = reader.readLine();
@@ -24,10 +25,7 @@ public class Main {
 
 
         }catch(IOException e){
-
+            System.out.println("오류");
         }
-
-
-
     }
 }
