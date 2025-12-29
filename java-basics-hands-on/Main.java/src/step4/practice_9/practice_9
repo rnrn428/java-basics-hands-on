@@ -1,0 +1,7 @@
+(A) Instance 멤버는 각 오브젝트에 속하고, Static 멤버는 클래스 자체에 속한다
+(B) Static 멤버는 오브젝트 없이 클래스명으로 접근할 수 있다
+(C) Instance 필드는 오브젝트마다 별도의 값을 가진다
+(D) Static 필드는 오브젝트마다 다른 값을 가진다
+
+
+정답 : (A), (C), (B)-> Static은 ClassName.member로 접근 가능

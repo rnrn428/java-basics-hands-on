@@ -1,0 +1,4 @@
+(A) Instance Method는 오브젝트를 통해 호출한다 o 
+(B) Static Method는 클래스명으로 직접 호출할 수 있다 o
+(C) Static Method에서 this 키워드를 사용할 수 있다 x
+(D) Math.max()는 Static Method의 예이다 o

@@ -1,0 +1,11 @@
+Todo todo = new Todo("운동", 1, false);
+System.out.println(todo.isDone());
+todo.setDone(true);
+System.out.println(todo.isDone());
+todo.setDone(false);
+System.out.println(todo.isDone());
+
+
+// false
+// true
+// false

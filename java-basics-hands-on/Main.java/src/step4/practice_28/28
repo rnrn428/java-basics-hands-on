@@ -1,0 +1,33 @@
+// Book 클래스: 필드 - title(String), price(int)
+
+class Book{
+    private String title;
+    private int price;
+
+    public Book(String title, int price){
+        this.title;
+        this.price;
+    }
+
+    public String getTitle(){
+        return title;
+    }
+    public int getPrice(){
+        return price;
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        // 여기에 코드 작성
+        Book book1 = new Book("Java 입문", 25000);
+        // 책1: "Java 입문", 25000원
+        Book book2 = new Book("Spring 가이드", 35000);
+        // 책2: "Spring 가이드", 35000원
+
+        System.out.println(book1.getTitle());
+        System.out.println(book2.getTitle());
+    }
+}
+

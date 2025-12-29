@@ -1,0 +1,42 @@
+class Account {
+    public int balance;
+}
+
+public class Problem12 {
+    public static void main(String[] args) {
+        Account acc = new Account();
+
+        acc.balance = -10000; // 잔액이 음수가 됨
+
+        System.out.println("Account balance: " + acc.balance);
+    }
+}
+
+
+문제점 : balance 필드가 public이라 외부에서 접근 가능 -> 그만큼 잘못된 값이 저장될 수 있음
+
+class Account{
+    private int balance; // 필드를 priavate으로 선언
+
+    public void setBalance(int balance){ // -> Setter에서 검증 로직 추가
+        if(balance > 0){
+            this.balance = balance;
+        }
+    }
+
+    public int getBalance(){
+        return balance;
+    }
+
+    
+}
+public class Problem12{
+    public static void main(String[] args){
+        Account acc = new Account();
+
+        acc.setBalance(-10000)
+
+        System.out.println("Account balance: " + acc.balance);
+        
+    }
+}

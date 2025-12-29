@@ -1,0 +1,20 @@
+public class Product {
+    private String name;           // (A)
+    private int price;             // (B)
+
+    public Product(String name, int price) {  // (C)
+        this.name = name;
+        this.price = price;
+    }
+
+    public String getName() {      // (D)
+        return name;
+    }
+}
+
+
+(A) -> 필드
+(B) -> 필드
+(C) -> 생성자
+(D) -> 메서드 (반환 타입있음)
+

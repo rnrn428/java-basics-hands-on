@@ -1,0 +1,4 @@
+(A) 모든 Java 클래스는 Object 클래스를 상속받는다 o
+(B) extends Object를 명시적으로 작성해야 Object를 상속받는다 x -> 굳이 작성안해도 컴파일에서 알아서 해줌
+(C) toString()은 Object 클래스에 정의된 메서드이다 o
+(D) Object 클래스는 java.lang 패키지에 있다 o java.lang 패키지는 자동 import됨

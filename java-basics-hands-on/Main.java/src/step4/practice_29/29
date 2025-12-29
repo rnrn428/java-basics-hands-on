@@ -1,0 +1,7 @@
+Todo todo1 = new Todo("공부", 3, false);
+Todo todo2 = new Todo("운동", 1, false);
+todo1.setTitle("Java 공부");
+
+
+todo 1 - > Java 공부
+todo 2 - > 운동

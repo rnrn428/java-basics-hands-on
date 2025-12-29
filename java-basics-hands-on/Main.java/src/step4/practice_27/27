@@ -1,0 +1,9 @@
+Todo todo = new Todo("공부하기", 2, false);
+System.out.println(todo.getTitle());
+System.out.println(todo.getHours());
+System.out.println(todo.isDone());
+
+
+공부하기
+2
+false

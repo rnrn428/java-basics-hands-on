@@ -1,0 +1,22 @@
+public void complete() {
+    done = true;
+}
+
+public boolean canFinishIn(int availableHours) {
+    return hours <= availableHours;
+}
+
+
+
+complete() 메서드
+
+-> 반환 타입 : void
+-> 역할 : done 필드를 true로 변경
+
+canFinishIn(int availableHours)
+
+-> 반환 타입 : boolean
+-> 매개변수 : availableHours (가용 시간)
+-> 역할 : 주어진 시간 내에 완료 가능한지 확인
+
+hours가 3이고 availableHours가 3이상이면 true값 반환

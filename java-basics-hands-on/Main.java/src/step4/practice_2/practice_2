@@ -1,0 +1,10 @@
+Todo todo1 = new Todo("공부", 3, false);
+Todo todo2 = new Todo("운동", 1, false);
+
+
+클래스 -> Todo
+오브젝트 -> todo1, todo2 (new 키워드로 오브젝트를 생성)
+
+
+
+

@@ -1,0 +1,22 @@
+public class Todo {
+    private String title;
+    private int hours;
+    private boolean done;
+
+    // 생성자 A
+    public Todo() {
+        this.title = "제목 없음";
+        this.hours = 0;
+        this.done = false;
+    }
+
+    // 생성자 B
+    public Todo(String title, int hours, boolean done) {
+        this.title = title;
+        this.hours = hours;
+        this.done = done;
+    }
+}
+
+생성자 A -> 초기값을 설정하여 고정 값으로 사용
+생성자 B -> 초기값은 전달받은 값으로 사용

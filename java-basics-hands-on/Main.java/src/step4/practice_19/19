@@ -1,0 +1,9 @@
+public String getTitle() {
+    return title;
+}
+
+public   → (1) 접근 제어자 (어디서든 호출 가능)
+String   → (2) 반환 타입 (문자열을 반환)
+getTitle → (3) 메서드 이름
+()       → (4) 매개변수 목록 (지금은 없음)
+return title; → (5) 반환문 (title 값을 반환)

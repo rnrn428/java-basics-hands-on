@@ -1,0 +1,24 @@
+public class Item {
+    private String name;
+    private int count;
+
+    public Item(String name, int count) {
+        name = name;
+        count = count;
+    }
+}
+
+수정 전
+
+
+public class Item{
+    private String name;
+    private int count;
+
+    public Item(String name, int count){
+        this.name = name;
+        this.count = count;
+    }
+}
+
+수정 후

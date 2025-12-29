@@ -1,0 +1,12 @@
+public class Book {
+    private String title;
+    private int price;
+
+    public ___(1)___(String title, int price) {
+        ___(2)___.title = title;
+        ___(3)___.price = price;
+    }
+}
+
+(1) Book
+(2), (3) this

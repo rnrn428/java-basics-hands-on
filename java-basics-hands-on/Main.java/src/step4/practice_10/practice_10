@@ -1,0 +1,26 @@
+class Counter {
+    private int count;
+    private static int totalCount = 0;
+
+    public Counter() {
+        this.count = 0;
+        totalCount++;
+    }
+
+    public static int getTotalCount() {
+        return totalCount;
+    }
+}
+
+public class Problem10 {
+    public static void main(String[] args) {
+        Counter c1 = new Counter();
+        Counter c2 = new Counter();
+        Counter c3 = new Counter();
+        System.out.println(Counter.getTotalCount());
+    }
+}
+
+정답 : 3
+
+totalCount는 static 변수 -> 모든 오브젝트가 공유

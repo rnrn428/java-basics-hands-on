@@ -1,0 +1,23 @@
+public class Product {
+    private String name;
+    private int price;
+
+    // Getter
+    public ___(1)___ getName() {
+        return ___(2)___;
+    }
+
+    // Setter
+    public ___(3)___ setPrice(int price) {
+        ___(4)___.price = price;
+    }
+}
+
+
+(1) String
+(2) name
+(3) void
+(4) this
+
+Getter: 필드 타입을 반환 (String, int)
+Setter: 반환값 없음 (void), 매개변수로 새 값 받음
