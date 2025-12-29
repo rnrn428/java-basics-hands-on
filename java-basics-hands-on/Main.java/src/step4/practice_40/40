@@ -1,0 +1,26 @@
+class Book {
+    private String title;
+    private int price;
+
+    public Book(String title, int price) {
+        this.title = title;
+        this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return title + " - " + price + "원";
+    }
+}
+
+public class Problem40 {
+    public static void main(String[] args) {
+        Book book = new Book("Java 입문", 25000);
+        System.out.println(book); // Java 입문 - 25000원
+        System.out.println("구매할 책: " + book); // 구매할 책: Java 입문 - 25000원
+    }
+}
+
+
+// Java 입문 - 25000원
+// 구매할 책: Java 입문 - 25000원

@@ -1,0 +1,15 @@
+public class Todo {
+    private String title;
+    private int hours;
+    private boolean done;
+
+    // 생성자, getter/setter 생략
+
+    public String toString(){
+        String status = done ? "[완료]" : "[미완료]";
+        return status + " " + title + " (" + hours + "시간)";
+    }
+
+    // toString() 재정의
+}
+

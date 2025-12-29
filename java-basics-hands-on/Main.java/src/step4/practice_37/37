@@ -1,0 +1,14 @@
+class Parent {
+    public void greet() {
+        System.out.println("안녕하세요");
+    }
+}
+
+class Child extends Parent {
+    @Override
+    public void greeet() {  // 오타: greet → greeet
+        System.out.println("안녕!");
+    }
+}
+
+컴파일 에러가 뜨는 이유는 ? @Override를 하기 위해서는 부모 클래스의 메서드 이름과 같아야한다.

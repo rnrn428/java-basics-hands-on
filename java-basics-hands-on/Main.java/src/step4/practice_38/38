@@ -1,0 +1,15 @@
+public class Product {
+    private String name;
+    private int price;
+
+    // 생성자 생략
+
+    ___(1)___
+    public ___(2)___ toString() {
+        return "Product{name='" + name + "', price=" + price + "}";
+    }
+}
+
+
+(1) @Override
+(2) String

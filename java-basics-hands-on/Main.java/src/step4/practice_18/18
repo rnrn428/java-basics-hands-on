@@ -10,6 +10,14 @@ public class Person {
     }
 
     public Person(String name, int age){
+        if(name == null || name.isEmpty()){
+            throw new IllegalArgumentException("Name cannot be null or Empty.");
+        }
+
+        if(age < 0){
+            throw new IllegalArgumentException("age cannot be negative.");
+        }
+        
         this.name = name;
         this.age = age;
     }
