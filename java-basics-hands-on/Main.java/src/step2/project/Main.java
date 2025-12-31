@@ -5,16 +5,16 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Main {
-    public static void main(String[] args){
-        try{
+    public static void main(String[] args) {
+        try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             System.out.println("=== 입력 테스트 ===");
 
-            while(true){
+            while (true) {
                 System.out.print("입력 (종료: quit) > ");
                 String str = reader.readLine();
 
-                if("quit".equals(str)){
+                if ("quit".equals(str)) {
                     System.out.println("프로그램을 종료합니다.");
                     break;
                 }
@@ -23,8 +23,7 @@ public class Main {
 
             }
 
-
-        }catch(IOException e){
+        } catch (IOException e) {
             System.out.println("오류");
         }
     }

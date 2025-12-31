@@ -1,7 +1,7 @@
 package step2.practice_5;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         String s1 = "Hello";
         String s2 = "Hello";
         String s3 = new String("Hello");
@@ -9,7 +9,7 @@ public class Main {
         System.out.println(s1 == s2);
         System.out.println(s1 == s3);
         System.out.println(s1.equals(s3));
-    
+
     }
 
 }
