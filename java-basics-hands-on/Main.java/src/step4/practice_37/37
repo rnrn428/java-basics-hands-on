@@ -11,4 +11,4 @@ class Child extends Parent {
     }
 }
 
-컴파일 에러가 뜨는 이유는 ? @Override를 하기 위해서는 부모 클래스의 메서드 이름과 같아야한다.
+컴파일 에러가 뜨는 이유는 ? @Override를 하기 위해서는 부모 클래스의 메서드 이름과 같아야한다. greeet -> greet로

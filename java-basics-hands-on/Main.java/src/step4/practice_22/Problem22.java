@@ -19,5 +19,5 @@ public class Problem22 {
     }
 }
 
-//8
-//24
+// 8
+// 24

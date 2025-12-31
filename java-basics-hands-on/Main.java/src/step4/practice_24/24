@@ -3,7 +3,7 @@ public class Todo {
 
     // boolean Getter 작성
     public boolean isDone(){
-        return done;
+        return done; 
     }
 }
 

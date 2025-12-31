@@ -1,6 +1,6 @@
 public class Dog ___(1)___ Animal {
     // Dog는 Animal의 필드와 메서드를 물려받음
-}
+    }
 
 (1) extends
 

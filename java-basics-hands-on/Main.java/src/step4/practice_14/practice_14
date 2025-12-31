@@ -3,4 +3,20 @@ public class Car{
     private String model;
     private int year;
     private boolean engineOn;
+
+    public Car(String brand, String model, int year, boolean enginoOn){
+        if(brand == null || brand.isEmpty() || model == null || model.isEmpty()){
+            throw new IllegalArgumentException("Brand and model cannot be null or empty.");
+        }
+
+        if(year < 1806 ){
+            throw new IllegalArgumentException("Year cannot be ")
+        }
+    }
+
+
+
+    public static void main(String[] args){
+
+    }
 }
