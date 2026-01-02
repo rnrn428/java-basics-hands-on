@@ -1,0 +1,28 @@
+BufferedReader reader = null;
+try {
+    reader = new BufferedReader(new FileReader("file.txt"));
+    String line = reader.readLine();
+} catch (IOException e) {
+    e.printStackTrace();
+} finally {
+    if (reader != null) {
+        try {
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+
+정답
+
+try{
+    reader = new BufferedReader(new FileReader("file.txt"));
+    String line = reader.readLine();
+}catch(IOException e){
+    e.printStackTrace();
+}
+
+// reader.close() 자동 호출
+

@@ -1,4 +1,4 @@
-package step6.todo.step6.practice_11;
+package step6.todo.step6.practice_12;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,15 @@ public class TodoService {
         todoList.add(todo);
     }
 
-    public void delete(int index) {
-        todoList.remove(index);
+    public List<Todo> getAll() {
+        return todoList;
+    }
+
+    public int count() {
+        return todoList.size();
+    }
+
+    public int get(int index) {
+        return index;
     }
 }
