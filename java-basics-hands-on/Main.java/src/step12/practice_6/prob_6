@@ -1,0 +1,21 @@
+import java.time.DayOfWeek;
+import java.time.temporal.TemporalAdjusters;
+
+public List<Todo> getDueThisWeek() {
+    LocalDate today = LocalDate.now();
+
+
+    // TODO: 이번주 월요일을 구하세요 (오늘이 월요일이면 오늘)
+    LocalDate startOfWeek = today.with(
+        TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY));
+
+
+    // TODO: 이번주 일요일을 구하세요 (오늘이 일요일이면 오늘)
+    LocalDate endOfWeek = today.with(
+        TemporalAdjusters.nextOrSame(DayOfWeek.SUNDAY));
+
+
+    return filterByDueDateRange(startOfWeek, endOfWeek);
+}
+
+// 이번주 마감인 TODO를 조회하는 메서드

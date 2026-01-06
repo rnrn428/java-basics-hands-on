@@ -1,0 +1,16 @@
+public List<Todo> getDueToday() {
+    // TODO: 오늘 날짜를 가져오세요
+    LocalDate today = LocalDate.now();
+    List<Todo> result = new ArrayList<>();
+
+    for (Todo todo : todoList) {
+        // TODO: 마감일이 오늘과 같은지 비교하세요
+        if (todo.getDueDate().isEqual(today)) {
+            result.add(todo);
+        }
+    }
+
+    return result;
+}
+
+// 오늘 마감인 TODO를 조회하는 메서드

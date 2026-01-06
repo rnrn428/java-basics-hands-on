@@ -6,6 +6,7 @@ public class Todo {
     private boolean done;
     private Category category;
     private Priority priority;
+    public Object isDone;
 
     public Todo(String title, int hours, Category category, Priority priority, boolean done) {
 

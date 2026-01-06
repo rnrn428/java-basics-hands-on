@@ -10,9 +10,14 @@ import com.nhn.academy.todo.model.Todo;
 import com.nhn.academy.todo.service.TodoService;
 
 public class Main {
+
+    private static final String FILENAME = "todos.csv";
+
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         TodoService service = new TodoService();
+
+        service.loadFromFile(FILENAME);
 
         while (true) {
             System.out.println("=== TODO 앱 ===");
@@ -73,10 +78,12 @@ public class Main {
                             service.printAll();
                             break;
                         case 2:
+                            System.out.print("구분 (1:WORK, 2:STUDY, 3:PERSONAL, 4:HEALTH, 5:OTHER) > ");
                             int cNum = Integer.parseInt(reader.readLine());
                             service.printCat(Category.fromNumber(cNum));
                             break;
                         case 3:
+                            System.out.print("중요도 (1: LOW, 2: MEDIUM, 3:HIGH) > ");
                             int pLev = Integer.parseInt(reader.readLine());
                             service.printPr(Priority.fromLevel(pLev));
                             break;
@@ -128,6 +135,7 @@ public class Main {
                     break;
 
                 case "0":
+                    service.saveToFile(FILENAME);
                     System.out.println("프로그램을 종료합니다.");
                     return;
 

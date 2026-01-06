@@ -1,0 +1,25 @@
+public List<Todo> getOverdue(){
+    LocalDate today = LocalDate.now();
+    List<Todo> result = new ArrayList<>();
+
+    for(Todo todo : todoList){
+        if(todo.getDueDate().isBefore(today) && !todo.isDone()){
+            result.add(todo);
+        }
+    }
+    return result;
+}
+
+for문
+
+
+public List<Todo> getOverdueStream(){
+    LocalDate today = LocalDate.now();
+
+    return todoList.stream()
+        .filter(todo -> todo.getDueDate().isBefore(today)) -> 마감일이 지남
+        .filter(todo -> !todo.isDone()) -> 완료된 것들이 아닌 미완료만 추출
+        .collect(Collectors.toList()); -> 리스트에 수집
+}
+
+Stream 방식
